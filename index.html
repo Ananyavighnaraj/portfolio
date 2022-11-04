@@ -78,17 +78,33 @@
     }
 
     #submit {
-      
+
       margin-bottom: 20px;
-      border-radius: 10px;
+
       color: white;
       background-color: black;
-      }
-#submit:hover{
-  color: black;
-  background-color: red;
-}
-   
+      height: 30px;
+      width: 100px;
+      border-radius: 4px;
+    }
+
+    #submit:hover {
+      color: black;
+      background-color: red;
+      border: none;
+    }
+
+    #form {
+      background-color: antiquewhite;
+    }
+
+    #services {
+      background-color: rgb(156, 142, 142);
+    }
+
+    #about {
+      background-color: rgb(240, 241, 225);
+    }
   </style>
 </head>
 
@@ -144,60 +160,63 @@
 
 
   <!-- part3 About -->
-  <div data-aos="fade-in" data-aos-duration="2000">
-    <div class=" container p-5 col-lg-6">
-      <h4>About me</h4>
-      <p>Hello! My name is Ananya Vighnaraj and I enjoy creating things that live on the internet.</p>
-      <p>Here are a few technologies I've been working with recently:</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>BOOTSTRAP</li>
-        <li>JavaScript</li>
-      </ul>
+  <div id="about">
+    <div data-aos="fade-in" data-aos-duration="2000">
+      <div class=" container p-5 col-lg-6">
+        <h4>About me</h4>
+        <p>Hello! My name is Ananya Vighnaraj and I enjoy creating things that live on the internet.</p>
+        <p>Here are a few technologies I've been working with recently:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>BOOTSTRAP</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <!-- work -->
-  <div class="services p-4 ">
-    <div class="container p-5">
-      <h4 class="text-center pb-3">Some Things I have Build</h4>
+  <div class="services p-4" id="services">
+    <div class="container p-5 ">
+      <h4 class=" text-center pb-3">Some Things I have Build</h4>
       <div class="row">
         <div class="col-lg-4  ">
           <div class="card">
             <div class="card-body">
               <img src="./images/cofeesite.png" alt="">
-              <a class="text-decoration-none text-dark" href="https://ananyavighnaraj.github.io/coffee/">view site</a>
+              <a class="text-decoration-none text-primary" href="https://ananyavighnaraj.github.io/coffee/">view
+                site</a>
             </div>
           </div>
         </div>
+      
 
-        <div class="col-lg-4 ">
-          <div class="card">
-            <div class="card-body">
-              <img src="./images/luminarsite.png" alt="">
-              <a class="text-decoration-none text-dark " href="">view site</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 ">
-          <div class="card">
-            <div class="card-body">
-              <img src="./images/moviegall.png" alt="">
-              <a class="text-decoration-none text-dark" href="">view site</a>
-            </div>
+      <div class="col-lg-4 ">
+        <div class="card">
+          <div class="card-body">
+            <img src="./images/luminarsite.png" alt="">
+            <a class="text-decoration-none text-primary " href="">view site</a>
           </div>
         </div>
       </div>
 
+      <div class="col-lg-4 ">
+        <div class="card">
+          <div class="card-body">
+            <img src="./images/moviegall.png" alt="">
+            <a class="text-decoration-none text-primary" href="">view site</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
+  </div>
+  
   <!-- contact -->
-  <div class="">
-    <div class="container  ">
+  <div class="" id="form">
+    <div class="container pt-5 ">
       <h1 class="text-center">Get In Touch</h1>
       <div class="row p-5">
         <div class="col-lg-4  " id="contact">
@@ -226,7 +245,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" id="form">
 
     <div class="col-lg-9 mx-auto">
       <form action="">
@@ -250,6 +269,7 @@
       </form>
     </div>
   </div>
+
 
   <!-- footer -->
   <div class="row p-2 bg-dark">
